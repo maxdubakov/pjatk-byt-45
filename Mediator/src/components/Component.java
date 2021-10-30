@@ -1,4 +1,8 @@
 package components;
 
-public abstract class Component {
+import mediator.Mediator;
+
+public interface Component {
+    void setMediator(Mediator mediator);
+    String name();
 }
